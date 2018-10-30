@@ -40,7 +40,7 @@ public class Snake extends JComponent {
         return true;
     }
 
-    void reset() {
+    synchronizedvoid reset() {
         size = 1;
         body = new LinkedList<>();
         body.add(new SnakePiece(START_X/SnakeGame.RESOLUTION, START_Y/SnakeGame.RESOLUTION));
