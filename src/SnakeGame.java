@@ -21,7 +21,7 @@ public class SnakeGame {
         JFrame frame = new JFrame("Snake");
         snake = new Snake();
         SnakeWindow window = new SnakeWindow(snake);
-        walking = new SnakeWalkingOneDirection(snake);
+        walking = new SnakeDiagonalWalking(snake);
         window.setSize(WIDTH, HEIGHT);
         frame.add(window);
         frame.setResizable(false);
